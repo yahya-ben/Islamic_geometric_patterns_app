@@ -28,4 +28,6 @@ export class Point {
   get toPair() {
     return "" + this.p1 + "," + this.p2;
   }
+
+  fun() {}
 }
