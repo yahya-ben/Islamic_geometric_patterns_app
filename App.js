@@ -32,6 +32,8 @@ import Svg, {
   Mask,
 } from "react-native-svg";
 
+/// Teste
+
 // This is a regular functional component
 // This component is called the "Main componenent". This will be executed first
 // We can add styles in an inline fashion, or using the StyleSheet component and then adding the style to the
