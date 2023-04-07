@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-//Dima Wydad 
-//rani mrid 
-// import{ StyleSheet,
-//   Text,
-//   View,
-//   TextInput,
-//   Button,
-//   ScrollView}from "oussama"
+
 import {
   StyleSheet,
   Text,
