@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   StyleSheet,
   Text,
@@ -32,39 +31,45 @@ import Svg, {
   Mask,
 } from "react-native-svg";
 
+import NvDsg from "./screens/NvDsg";
+import PageAccueil from "./screens/PageAccueil";
+
 // This is a regular functional component
 // This component is called the "Main componenent". This will be executed first
 // We can add styles in an inline fashion, or using the StyleSheet component and then adding the style to the
 // componenet
 
 export default function App() {
-  const [getter, setter] = useState(3);
-  return (
-    <View
-      style={[
-        StyleSheet.absoluteFill,
-        { alignItems: "center", justifyContent: "center" },
-      ]}
-    >
-      <MyPoly name={`${getter}`} />
-      <View style={{ flexDirection: "row", padding: 10 }}>
-        <Button
-          title="Add + "
-          onPress={() => {
-            setter(getter + 1);
-          }}
-        />
-        <Button
-          title="Sub - "
-          onPress={() => {
-            if (getter > 3) setter(getter - 1);
-            else Alert.alert("Can't go less than n = 3");
-          }}
-        />
-      </View>
-      <Button title="Creer un motif" />
-    </View>
-  );
+  // const [getter, setter] = useState(3);
+  // return (
+  //   <View
+  //     style={[
+  //       StyleSheet.absoluteFill,
+  //       { alignItems: "center", justifyContent: "center" },
+  //     ]}
+  //   >
+  //     <MyPoly name={`${getter}`} />
+  //     <View style={{ flexDirection: "row", padding: 10 }}>
+  //       <Button
+  //         title="Add + "
+  //         onPress={() => {
+  //           setter(getter + 1);
+  //         }}
+  //       />
+  //       <Button
+  //         title="Sub - "
+  //         onPress={() => {
+  //           if (getter > 3) setter(getter - 1);
+  //           else Alert.alert("Can't go less than n = 3");
+  //         }}
+  //       />
+  //     </View>
+  //     <Button title="Creer un motif" />
+  //   </View>
+
+  // return <PageAccueil onClick={toNvDsg()} />;
+
+  return <PageAccueil />;
 }
 
 /*
