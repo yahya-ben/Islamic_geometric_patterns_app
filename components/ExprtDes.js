@@ -1,43 +1,75 @@
-import React from "react";
-import { View, ScrollView, Text, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import {
+  TouchableOpacity,
+  StyleSheet,
+  Modal,
+  View,
+  Text,
+  Alert,
+} from "react-native";
+import CtGenerique from "./CtGenerique";
+import Colors from "../constants/colors";
 
 const ExprtDes = (props) => {
   return (
-    <View style={styles.swiperContainer}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.text}>Exporter</Text>
+    <CtGenerique num={3}>
+      <View style={styles.container}>
+        <Text style={styles.text}>Type de fichier</Text>
+        <View style={styles.btnContainer}>
+          <TouchableOpacity
+            style={styles.btns}
+            onPress={() => {
+              Alert.alert("Votre design est exporte en PNG");
+            }}
+          >
+            <Text style={styles.btnText}>PNG</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.btns}
+            onPress={() => {
+              Alert.alert("Votre design est exporte en SVG");
+            }}
+          >
+            <Text style={styles.btnText}>SVG</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-
-      <View style={styles.contentContainer}>
-        <ScrollView>{props.tiles}</ScrollView>
-      </View>
-    </View>
+    </CtGenerique>
   );
 };
 
 const styles = StyleSheet.create({
-  swiperContainer: {
-    flex: 1,
+  container: {
+    width: "80%",
+    height: "75%",
   },
-  wrapper: {
-    flex: 1,
-  },
-  titleContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    // borderColor: "black",
-    // borderWidth: 2,
-  },
-  contentContainer: {
-    flex: 3,
-    // borderColor: "black",
-    // borderWidth: 2,
-  },
+
   text: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
+    flex: 1,
+    color: Colors.first_accent,
+    fontWeight: "500",
+    fontSize: 14,
+    marginBottom: 10,
+  },
+
+  btnText: {
+    color: Colors.primary,
+    fontWeight: "700",
+    fontSize: 14,
+  },
+
+  btnContainer: {
+    flex: 2,
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+
+  btns: {
+    width: "40%",
+    backgroundColor: Colors.first_accent,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 10,
   },
 });
 

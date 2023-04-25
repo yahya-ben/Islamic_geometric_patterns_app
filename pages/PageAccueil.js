@@ -1,28 +1,29 @@
 import React from "react";
-import { View, StyleSheet, TouchableOpacity, Image, Text } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Alert, Text } from "react-native";
+import { Logo } from "../components/ToolBarAssets";
 
 const PageAccueil = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.subContainer}>
         <View style={styles.imageContainer}>
-          <Image
-            style={styles.image}
-            source={require("../assets/new_logo.png")}
-          ></Image>
+          <Logo />
         </View>
 
         <View style={styles.buttonsContainer}>
           <TouchableOpacity
             activeOpacity={0.8}
-            onPress={() => props.navigation.navigate("NvDsg", {})}
+            onPress={() => props.navigation.navigate("NewNouveauDesing", {})}
           >
             <View style={styles.btn1Container}>
               <Text style={styles.text1}>Nouveau design</Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity activeOpacity={0.8}>
+          <TouchableOpacity
+            activeOpacity={0.8}
+            onPress={() => Alert.alert("Version Beta ;)")}
+          >
             <View style={styles.btn2Container}>
               <Text style={styles.text2}>Designs enregistreés</Text>
             </View>

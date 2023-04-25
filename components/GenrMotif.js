@@ -1,43 +1,50 @@
-import React from "react";
-import { View, ScrollView, Text, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, View, Text } from "react-native";
+import CtGenerique from "./CtGenerique";
+import Colors from "../constants/colors";
+import Slider from "@react-native-community/slider";
+
+// I want to add a slider to increase or descrease
+// Why not merge the GenrMotif and Perso into one ?? Okay, will see
 
 const GenrMotif = (props) => {
-  return (
-    <View style={styles.swiperContainer}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.text}>Generer le motif</Text>
-      </View>
+  const [sliderValue, setSliderValue] = useState(2);
 
-      <View style={styles.contentContainer}>
-        <ScrollView>{props.tiles}</ScrollView>
+  return (
+    <CtGenerique num={1}>
+      <View style={styles.item}>
+        <Text style={styles.text}>Contact Angle</Text>
+        <Slider
+          style={{ flex: 1 }}
+          maximumValue={75}
+          minimumValue={1}
+          minimumTrackTintColor={Colors.first_accent}
+          maximumTrackTintColor={Colors.first_accent}
+          step={2}
+          value={sliderValue}
+          onValueChange={(sliderValue) => {
+            setSliderValue(sliderValue);
+            props.getter(sliderValue);
+          }}
+        />
       </View>
-    </View>
+    </CtGenerique>
   );
 };
 
 const styles = StyleSheet.create({
-  swiperContainer: {
-    flex: 1,
+  item: {
+    // margin: 10,
+    width: "80%",
+    height: 75,
+    // backgroundColor: "green",
   },
-  wrapper: {
-    flex: 1,
-  },
-  titleContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    // borderColor: "black",
-    // borderWidth: 2,
-  },
-  contentContainer: {
-    flex: 3,
-    // borderColor: "black",
-    // borderWidth: 2,
-  },
+
   text: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
+    color: Colors.first_accent,
+    fontWeight: "500",
+    fontSize: 14,
+    // marginBottom: 10,
   },
 });
 
