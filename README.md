@@ -20,4 +20,5 @@ L'application est organisee en plusieurs fichiers et documents :
   * L'ajout d'autre tuilage va enrichir l'application, donc comme bonus, on peut ajouter d'autres tuilage plus sophistiquees.
   * La partie de generation de motifs varie seulement l'angle de contacte, on peut varier d'autres parametres et generer des motifs plus jolies
   * ...
-
+**Important : 
+ Il est preferable de travailler dans une branche separee et de tester le code sur machine avant de l'incorporer avec la branche master 
