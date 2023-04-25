@@ -1,10 +1,10 @@
 # Motif_app
 Une application mobile pour la generation des motifs islamiques geometriques
 
-### Ce qu'on peut faire pour ameliorer notre application :
+### L'organisation de l'application
 
-✅ Implementer les bouttons "Add+" et "Sub-"  
-⬜️ Implementer le boutton "Creer un motif"  
-⬜️ Implementer une option de zoom  
-⬜️ Implementer la DCEL (structure de donnees)  
-⬜️ Ajouter d'autres options (coloriage, autres tuiles, ...)  
+L'application est organisee en plusieurs fichiers et documents :
+
+* App.js : Ce document sert a lancer l'application. Dans son code on trouve qu'il utilise le React Navigation qui est un feature essentiel pour assurer la navigation entre les pages de l'app.
+* pages : Est un fichier 
+
