@@ -21,13 +21,14 @@ const NewNouveauDesing = (props) => {
         return squareTiling2(600, 600, 50);
       case "tile2":
         return tilingWithHexa(600, 600, 30);
+
       default:
         return;
     }
   };
 
   const [fillColor, setFillColor] = useState("none");
-  const [strokeWidth, setStrokeWidth] = useState(2); // An object would be better
+  const [strokeWidth, setStrokeWidth] = useState(2);
   const [strokeColor, setStrokeColor] = useState(Colors.primary);
   const [gridStroke, setGridStroke] = useState(Colors.primary);
 
@@ -46,6 +47,7 @@ const NewNouveauDesing = (props) => {
     ));
   };
 
+  // const [etatActuel, modifierEtatActuel] = useState();
   const [tileType, setTileType] = useState("tile1");
   const [myTiling, setMyTiling] = useState(generateTiling(tileType));
   const [angleValue, setAngleValue] = useState(25);

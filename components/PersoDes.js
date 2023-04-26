@@ -30,7 +30,7 @@ const PersoDes = (props) => {
             minimumTrackTintColor={Colors.first_accent}
             maximumTrackTintColor={Colors.first_accent}
             step={1}
-            value={sliderValue}
+            // value={sliderValue}
             onValueChange={(sliderValue) => {
               setSliderValue(sliderValue);
               props.getter1(sliderValue);
@@ -56,26 +56,47 @@ const PersoDes = (props) => {
               style={[styles.colorItem, { backgroundColor: "#D4FAFC" }]}
               onPress={() => props.getter2("#D4FAFC")}
             ></TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.colorItem, { backgroundColor: "#40513B" }]}
+              onPress={() => props.getter2("#40513B")}
+            ></TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.colorItem, { backgroundColor: "#609966" }]}
+              onPress={() => props.getter2("#609966")}
+            ></TouchableOpacity>
           </View>
         </View>
         <View style={styles.item}>
           <Text style={styles.text}>Fill</Text>
           <View style={styles.colorContainer}>
             <TouchableOpacity
+              style={[
+                styles.colorItem,
+                { borderColor: Colors.first_accent, borderWidth: 2 },
+              ]}
+              onPress={() => props.getter3("none")}
+            ></TouchableOpacity>
+            <TouchableOpacity
               style={[styles.colorItem, { backgroundColor: "#9E6F21" }]}
               onPress={() => props.getter3("#9E6F21")}
             ></TouchableOpacity>
-            <TouchableOpacity
-              style={[styles.colorItem, { backgroundColor: "#FFEEB3" }]}
-              onPress={() => props.getter3("#FFEEB3")}
-            ></TouchableOpacity>
+
             <TouchableOpacity
               style={[styles.colorItem, { backgroundColor: "#B8E7E1" }]}
               onPress={() => props.getter3("#B8E7E1")}
             ></TouchableOpacity>
+
             <TouchableOpacity
-              style={[styles.colorItem, { backgroundColor: "#D4FAFC" }]}
-              onPress={() => props.getter3("#D4FAFC")}
+              style={[styles.colorItem, { backgroundColor: "#40513B" }]}
+              onPress={() => props.getter3("#40513B")}
+            ></TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.colorItem, { backgroundColor: "#609966" }]}
+              onPress={() => props.getter3("#609966")}
+            ></TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.colorItem, { backgroundColor: "#00416D" }]}
+              onPress={() => props.getter3("#00416D")}
             ></TouchableOpacity>
           </View>
         </View>
@@ -116,16 +137,15 @@ const styles = StyleSheet.create({
   },
 
   colorContainer: {
-    flex: 1,
     flexDirection: "row",
     flexWrap: "wrap",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-around",
   },
 
   colorItem: {
-    flex: 3,
-    width: 10,
+    // flex: 3,
+    width: 30,
     height: 30,
   },
 });

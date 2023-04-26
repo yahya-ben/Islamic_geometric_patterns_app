@@ -1,4 +1,4 @@
-import * as Geometric from "./geometric";
+import * as Geometric from "../geometric";
 export function motif(tile, contact_angle) {
   const mids = polygonMidpoints(tile);
   const n = tile.length;
@@ -31,36 +31,6 @@ export function motif(tile, contact_angle) {
 
   return motifs;
 }
-
-// Trouve l'intersection de deux lignes
-// function getIntersection(line1, line2) {
-//   // Convert line1 into a ray with starting point p1 and direction vector v1
-//   const p1 = line1[0];
-//   const v1 = [line1[1][0] - p1[0], line1[1][1] - p1[1]];
-
-//   // Convert line2 into a ray with starting point p2 and direction vector v2
-//   const p2 = line2[0];
-//   const v2 = [line2[1][0] - p2[0], line2[1][1] - p2[1]];
-
-//   // Compute the intersection point of the two rays
-//   const det = v1[0] * v2[1] - v1[1] * v2[0];
-//   if (det === 0) {
-//     // The rays are parallel, so they do not intersect
-//     return null;
-//   } else {
-//     const t1 = ((p2[0] - p1[0]) * v2[1] - (p2[1] - p1[1]) * v2[0]) / det;
-//     const t2 = ((p2[0] - p1[0]) * v1[1] - (p2[1] - p1[1]) * v1[0]) / det;
-//     if (t1 >= 0 && t2 >= 0) {
-//       // The rays intersect at the point p1 + t1 * v1
-//       const x = Math.round(p1[0] + t1 * v1[0]);
-//       const y = Math.round(p1[1] + t1 * v1[1]);
-//       return [x, y];
-//     } else {
-//       // The rays do not intersect
-//       return null;
-//     }
-//   }
-// }
 
 function getIntersection(line1, line2) {
   // Convert line1 into a ray with starting point p1 and direction vector v1
