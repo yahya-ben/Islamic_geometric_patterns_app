@@ -10,7 +10,7 @@ const GenrMotif = (props) => {
   return (
     <CtGenerique num={1}>
       <View style={styles.item}>
-        <Text style={styles.text}>Angle de contact</Text>
+        <Text style={styles.text}>Déformation</Text>
         <Slider
           style={{ flex: 1 }}
           maximumValue={75}

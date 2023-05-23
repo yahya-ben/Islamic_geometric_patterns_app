@@ -1,56 +1,5 @@
 import * as Geometric from "../geometric";
 
-export function tilingWithSquares(px, py, width, height, side_len) {
-  let tMap = new Map();
-  let n = (width - px) / side_len;
-  let m = (height - py) / side_len;
-  let pi = px;
-  let k = 1;
-
-  let nombre_element = 0;
-
-  for (let i = 0; i < m; i++) {
-    for (let j = 0; j < n; j++) {
-      points = drawSquare(px, py, side_len);
-      tMap.set(k, points);
-      px += side_len;
-      k++;
-    }
-    py += side_len;
-    px = pi;
-  }
-  return tMap;
-}
-
-export function squareTiling(width, height, side_len) {
-  const seed_square = Geometric.polygonRegular(
-    4,
-    calcArea(side_len, 4),
-    [0, 300]
-  );
-  const n = Math.round(width / side_len);
-  const m = Math.round(height / side_len);
-
-  let k = 0,
-    p = 0;
-  let offset = 0;
-  const tMap = new Map().set(k, seed_square);
-
-  let a = side_len;
-
-  for (let i = 0; i < m; i++) {
-    for (let j = 0; j < n; j++) {
-      const square = Geometric.polygonTranslate(tMap.get(k), 0, 2 * a);
-      tMap.set(++k, square);
-      // tMap.set(k++, Geometric.polygonTranslate(tMap.get(k), 0, 2 * a));
-    }
-    offset += 2 * a;
-    tMap.set(k + 1, Geometric.polygonTranslate(tMap.get(0), 30, offset));
-  }
-
-  return tMap;
-}
-
 export function squareTiling2(width, height, side_len) {
   let tMap = new Map();
   let x = 0;
@@ -107,9 +56,6 @@ export function tilingWithHexa(width, height, side_len) {
   return tMap;
 }
 
-function tilingWithTriangles() {}
-function tilingWithDeca() {}
-
 export function drawSquare(px, py, side_len) {
   let pts = [
     [px, py],
@@ -125,3 +71,7 @@ function calcArea(side_len, n) {
   const apothem = side_len / (2 * Math.tan(Math.PI / n));
   return (apothem * perimeter) / 2;
 }
+
+/// Future work
+function tilingWithTriangles() {}
+function tilingWithDeca() {}

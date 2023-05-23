@@ -1,24 +1,20 @@
 import React from "react";
-import { View, ScrollView, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import Colors from "../constants/colors";
 
 const CtGenerique = (props) => {
   const titles = [
-    "Choisir une tuile",
-    "Generer le motif",
+    "Choisir un pavage",
+    "Générer le motif",
     "Personnaliser le design",
-    "Exporter",
+    "Exporter le resultat !",
   ];
   return (
     <View style={styles.subControl}>
       <View style={styles.controleContainer}>
         <Text style={styles.controleTitle}>{titles[props.num]}</Text>
       </View>
-      <View style={styles.scrollContainer}>
-        {/* <ScrollView contentContainerStyle={styles.scroll}> */}
-        {props.children}
-        {/* </ScrollView> */}
-      </View>
+      <View style={styles.scrollContainer}>{props.children}</View>
       <View style={styles.ghostContainer}></View>
     </View>
   );

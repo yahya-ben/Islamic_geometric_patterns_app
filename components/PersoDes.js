@@ -22,7 +22,7 @@ const PersoDes = (props) => {
     <CtGenerique num={2}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.item}>
-          <Text style={styles.text}>Stroke width</Text>
+          <Text style={styles.text}>Épaisseur du trait</Text>
           <Slider
             style={{ flex: 1 }}
             maximumValue={5}
@@ -38,7 +38,7 @@ const PersoDes = (props) => {
           />
         </View>
         <View style={styles.item}>
-          <Text style={styles.text}>Stroke Color</Text>
+          <Text style={styles.text}>Couleur du trait</Text>
           <View style={styles.colorContainer}>
             <TouchableOpacity
               style={[styles.colorItem, { backgroundColor: "#9E6F21" }]}
@@ -67,7 +67,7 @@ const PersoDes = (props) => {
           </View>
         </View>
         <View style={styles.item}>
-          <Text style={styles.text}>Fill</Text>
+          <Text style={styles.text}>Remplissage</Text>
           <View style={styles.colorContainer}>
             <TouchableOpacity
               style={[
@@ -100,8 +100,8 @@ const PersoDes = (props) => {
             ></TouchableOpacity>
           </View>
         </View>
-        <View style={styles.item}>
-          <Text style={styles.text}>Desactiver la grille</Text>
+        <View style={[styles.item, styles.switch]}>
+          <Text style={styles.text}>Désactiver la grille</Text>
           <Switch
             trackColor={{ false: "#767577", true: Colors.second_accent }}
             thumbColor={isEnabled ? Colors.primary : "#f4f3f4"}
@@ -120,6 +120,10 @@ const styles = StyleSheet.create({
     width: "80%",
     height: 60,
     marginVertical: 7,
+  },
+
+  switch: {
+    alignItems: "flex-start",
   },
 
   scroll: {
@@ -144,7 +148,6 @@ const styles = StyleSheet.create({
   },
 
   colorItem: {
-    // flex: 3,
     width: 30,
     height: 30,
   },

@@ -21,7 +21,6 @@ const NewNouveauDesing = (props) => {
         return squareTiling2(600, 600, 50);
       case "tile2":
         return tilingWithHexa(600, 600, 30);
-
       default:
         return;
     }
