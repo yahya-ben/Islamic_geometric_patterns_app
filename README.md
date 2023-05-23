@@ -69,5 +69,3 @@ This project is licensed under the [MIT License](LICENSE).
 For any inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
 
 ---
-
-*Note: Add any additional sections, acknowledgments, or credits as needed for your specific project.*
