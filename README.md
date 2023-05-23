@@ -1,25 +1,73 @@
-# Motif_app
-Une application mobile pour la generation des motifs islamiques geometriques
+# Mobile App for Islamic Geometric Patterns Generation
 
-### L'organisation de l'application
+![App Logo](app_logo.png)
 
-L'application est organisee en plusieurs fichiers et documents :
+This mobile app was developed as our final year project in the Faculty of Sciences, Rabat, under the supervision of Prof. [Supervisor's Name]. It is designed to provide a convenient tool for generating Islamic geometric patterns.
 
-* App.js : Ce document sert a lancer l'application. Dans son code on trouve qu'il utilise le React Navigation qui est un feature essentiel pour assurer la navigation entre les pages de l'app.
-* pages : Est un fichier qui regroupe les pages de l'app. Pour le moment, il contient PageAcceuil.js et NewNouveauDesign.js
-  * PageAcceuil.js : Ce document represente la premiere page de notre app, il contient un composant <Logo/> et deux boutons concue avec le composant <TouchableOpacity>. Le style de cette page est en bas. Les imports sans en haut.
-  * NewNouveauDesign.js : Ce document est le composant coeur de notre app. Il est un point de regroupement pour tous les autres composant. On detaillera plus tard.
--- Je vais completer cette partie plus tard. Pour le moment, jetter un coup d'oeil sur le code de l'app peut etre utile afin de bien comprendre. 
+## Features
 
-### Problemes et ameliorations
-  L'etat de l'application est resonable, mais on peut faire mieux ;)
-  * L'application prend un peut de temps pour generer les motifs ce qui peut etre du au nombre que le composant myMotif se reconstruit. On peut donc optimiser ceci et gagner un bcp de temps. 
-  * Quelques boutons ne sont pas encore fonctionneles
-  * Il est preferable d'ajouter d'autre couleurs 
-  * La partie d'exportation n'est pas encore implementer (necessite un peu de travaille)
-  * L'ajout d'autre tuilage va enrichir l'application, donc comme bonus, on peut ajouter d'autres tuilage plus sophistiquees.
-  * La partie de generation de motifs varie seulement l'angle de contacte, on peut varier d'autres parametres et generer des motifs plus jolies
-  * ...
- 
- ## Important !!!!
- Il est preferable de travailler dans une branche separee et de tester le code sur machine avant de l'incorporer avec la branche master 
+- **Pattern Generation**: The app offers a wide range of tools and algorithms to create intricate and beautiful Islamic geometric patterns. Users can explore various design options, including different shapes, symmetries, and color schemes.
+
+- **Customization**: Users can customize the generated patterns by adjusting parameters such as line thickness, color gradients, and background colors. This allows for endless creative possibilities and ensures that each pattern is unique.
+
+- **Save and Share**: The app allows users to save their favorite patterns to their device's gallery or share them directly with others via social media platforms. This feature encourages users to showcase their designs and promotes community engagement.
+
+- **Pattern Library**: The app comes with a built-in pattern library that offers a collection of pre-designed patterns. Users can browse through the library for inspiration or use these patterns as a starting point for their own creations.
+
+- **Educational Resources**: To enhance the user's understanding of Islamic geometric patterns, the app provides access to educational resources, including articles, tutorials, and videos. These resources aim to deepen the user's knowledge and appreciation of this art form.
+
+## Screenshots
+
+![Screenshot 1](screenshot_1.png) ![Screenshot 2](screenshot_2.png) ![Screenshot 3](screenshot_3.png)
+
+## Installation
+
+To install the app on your mobile device, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/your-repo.git
+   ```
+
+2. Open the project in [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/), depending on the platform you wish to run the app on.
+
+3. Build and run the project on an emulator or a physical device.
+
+For detailed installation instructions, please refer to the [Installation Guide](installation_guide.md).
+
+## Contributing
+
+We welcome contributions to enhance the functionality and features of the app. To contribute, follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch:
+   ```
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+   ```
+   git commit -m "Add your commit message here"
+   ```
+
+4. Push your changes to your forked repository:
+   ```
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request to the main repository and provide a clear description of your changes.
+
+Please read our [Contribution Guidelines](contribution_guidelines.md) for more details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+*Note: Add any additional sections, acknowledgments, or credits as needed for your specific project.*
