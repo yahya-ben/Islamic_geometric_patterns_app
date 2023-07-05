@@ -1,9 +1,9 @@
 # **Islamic Geometric Patterns Mobile App 📱**
 
-![](screen_1.png)
-![](screen_2.png)
-![](screen_3.png)
-![](screen_4.png)
+![](screenshots/screen_1.png)
+![](screenshots/screen_2.png)
+![](screenshots/screen_3.png)
+![](screenshots/screen_4.png)
 
 ## **Project Description 📜**
 
