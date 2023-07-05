@@ -1,6 +1,9 @@
 # **Islamic Geometric Patterns Mobile App 📱**
 
-
+GitHub issues
+GitHub forks
+GitHub stars
+GitHub license
 
 <div style="display: flex;">
  <img src="screenshots/screen_1.png" alt="Image" width="200" />
