@@ -1,8 +1,8 @@
 # **Islamic Geometric Patterns Mobile App 📱**
 
-[![GitHub issues](https://img.shields.io/github/issues/yahyabene/Motif_app/)](https://github.com/yahyabene/Motif_app/issues)
-[![GitHub forks](https://img.shields.io/github/forks/yahyabene/Motif_app/)](https://github.com/yahyabene/Motif_app/network)
-[![GitHub stars](https://img.shields.io/github/stars/yahyabene/Motif_app/)](https://github.com/yahyabene/Motif_app/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/yahyabene/Motif_app)](https://github.com/yahyabene/Motif_app/issues)
+[![GitHub forks](https://img.shields.io/github/forks/yahyabene/Motif_app)](https://github.com/yahyabene/Motif_app/network)
+[![GitHub stars](https://img.shields.io/github/stars/yahyabene/Motif_app)](https://github.com/yahyabene/Motif_app/stargazers)
 
 <div style="display: flex;">
  <img src="screenshots/screen_1.png" alt="Image" width="200" />
