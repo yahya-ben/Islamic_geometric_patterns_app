@@ -11,7 +11,7 @@
 
 ## **Project Description 📜**
 
-Welcome to the Islamic Geometric Patterns mobile app! 🎉 This app was developed using the React Native framework, with the aim of exploring the artistic, mathematical, and algorithmic secrets of geometric Islamic patterns. Our goal is to preserve this precious heritage and make it accessible to everyone.
+Welcome to the Islamic Geometric Patterns mobile app! 🎉 This mobile application addresses a common challenge faced by artisans and professionals who lack suitable tools to design and share their intricate geometric Islamic patterns with clients or fellow artisans. Developed using the powerful React Native framework, our app delves into the artistic, mathematical, and algorithmic secrets behind these mesmerizing patterns. Our ultimate goal is to preserve this precious heritage and make it accessible to everyone.
 
 🔹 **Create Stunning Patterns:** With this app, you can easily create beautiful Islamic patterns that you often see adorning mosque entrances and homes.
 
