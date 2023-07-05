@@ -1,4 +1,4 @@
-# **Islamic Geometric Patterns Mobile App 🕌📱**
+# **Islamic Geometric Patterns Mobile App 📱**
 
 ![](screen_1.png)
 ![](screen_2.png)
