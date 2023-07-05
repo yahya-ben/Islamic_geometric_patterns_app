@@ -1,9 +1,8 @@
 # **Islamic Geometric Patterns Mobile App 📱**
 
-GitHub issues
-GitHub forks
-GitHub stars
-GitHub license
+[![GitHub issues](https://img.shields.io/github/issues/your-username/repo-name)](https://github.com/your-username/repo-name/issues)
+[![GitHub forks](https://img.shields.io/github/forks/your-username/repo-name)](https://github.com/your-username/repo-name/network)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/repo-name)](https://github.com/your-username/repo-name/stargazers)
 
 <div style="display: flex;">
  <img src="screenshots/screen_1.png" alt="Image" width="200" />
