@@ -1,71 +1,56 @@
-# Mobile App for Islamic Geometric Patterns Generation
+# **Islamic Geometric Patterns Mobile App 🕌📱**
 
-![App Logo](app_logo.png)
+![](screen_1.png)
+![](screen_2.png)
+![](screen_3.png)
+![](screen_4.png)
 
-This mobile app was developed as our final year project in the Faculty of Sciences, Rabat, under the supervision of Prof. [Supervisor's Name]. It is designed to provide a convenient tool for generating Islamic geometric patterns.
+## **Project Description 📜**
 
-## Features
+Welcome to the Islamic Geometric Patterns mobile app! 🎉 This app was developed using the React Native framework, with the aim of exploring the artistic, mathematical, and algorithmic secrets of geometric Islamic patterns. Our goal is to preserve this precious heritage and make it accessible to everyone.
 
-- **Pattern Generation**: The app offers a wide range of tools and algorithms to create intricate and beautiful Islamic geometric patterns. Users can explore various design options, including different shapes, symmetries, and color schemes.
+🔹 **Create Stunning Patterns:** With this app, you can easily create beautiful Islamic patterns that you often see adorning mosque entrances and homes.
 
-- **Customization**: Users can customize the generated patterns by adjusting parameters such as line thickness, color gradients, and background colors. This allows for endless creative possibilities and ensures that each pattern is unique.
+🔹 **Multiplatform Support:** The app is available for both Android and iOS platforms, thanks to React Native's cross-platform capabilities.
 
-- **Save and Share**: The app allows users to save their favorite patterns to their device's gallery or share them directly with others via social media platforms. This feature encourages users to showcase their designs and promotes community engagement.
+## **Project Building Blocks 🧱**
 
-- **Pattern Library**: The app comes with a built-in pattern library that offers a collection of pre-designed patterns. Users can browse through the library for inspiration or use these patterns as a starting point for their own creations.
+In our project, we identified React Native as the most promising framework for multiplatform app development. Additionally, we chose SVG (Scalable Vector Graphics) as a relevant library for manipulating and displaying vector graphics.
 
-- **Educational Resources**: To enhance the user's understanding of Islamic geometric patterns, the app provides access to educational resources, including articles, tutorials, and videos. These resources aim to deepen the user's knowledge and appreciation of this art form.
+## **Future Perspectives 🚀**
 
-## Screenshots
+Although our work is still a work in progress, we have a vision for the future of the Islamic Geometric Patterns app that we would like to share. We've decided to make this project open source on GitHub to invite collaboration and contributions from the community. Here are some of the exciting features we plan to implement:
 
-![Screenshot 1](screenshot_1.png) ![Screenshot 2](screenshot_2.png) ![Screenshot 3](screenshot_3.png)
+🔹 **Robust Tiling Generation Methods:** We aim to implement methods that automatically generate tiles, increasing the diversity of available patterns.
 
-## Installation
+🔹 **Faster Tiling Generation:** We recognize that pattern generation can be time-consuming for complex designs. We hope to optimize this process to provide a smoother user experience.
 
-To install the app on your mobile device, follow these steps:
+🔹 **More Pattern Generation Methods:** We want to add additional pattern generation methods, such as rosette-shaped patterns, to offer users a wider variety of designs.
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/your-repo.git
-   ```
+🔹 **Customization and Collaboration:** Our ultimate vision is to give users the freedom to personalize their patterns by adding colors, text, borders, and even inserting the pattern into frames to simulate real-world placement. We also aim to create a collaborative space where users can share and collaborate on their own designs.
 
-2. Open the project in [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/), depending on the platform you wish to run the app on.
+## **How to Install and Run the Project 🚀**
 
-3. Build and run the project on an emulator or a physical device.
+To install and run the Islamic Geometric Patterns app, follow these steps:
 
-For detailed installation instructions, please refer to the [Installation Guide](installation_guide.md).
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies using the package manager of your choice.
+4. Build and run the app on your device or simulator.
 
-## Contributing
+## **Credits, Acknowledgments, and Additional Resources 📚**
 
-We welcome contributions to enhance the functionality and features of the app. To contribute, follow these steps:
+We would like to express our gratitude to our mentor, Professor Youssef EL BENANI, for their valuable guidance and support throughout this project.
 
-1. Fork the repository.
+In the development of the Islamic Geometric Patterns mobile app, we extend our heartfelt appreciation to all the contributors and resources that have inspired and supported us along this journey.
 
-2. Create a new branch:
-   ```
-   git checkout -b feature/your-feature-name
-   ```
+🔹 **Credits and Acknowledgments:**
 
-3. Make your changes and commit them:
-   ```
-   git commit -m "Add your commit message here"
-   ```
+- E. H. Hankin. "The Drawing of Geometric Patterns in Saracenic Art," volume 15 of Memoirs of the Archaeological Society of India, Government of India, 1925.
+- Craig S. Kaplan. "Islamic Star Patterns from Polygons in Contact," 2005.
+- Islamic Geometric Patterns: Their Historical Development and Traditional Methods of Construction by Jay Bonner, Craig Kaplan
 
-4. Push your changes to your forked repository:
-   ```
-   git push origin feature/your-feature-name
-   ```
+📚 We also recommend the following resources :
 
-5. Open a pull request to the main repository and provide a clear description of your changes.
-
-Please read our [Contribution Guidelines](contribution_guidelines.md) for more details.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-
----
+- [Coding Train Islamic Star Patterns](https://youtu.be/hCjTKCb2Cuw)
+- [Application for Nets and Tessellations With Edge-to-edge Regular Polygons](https://github.com/HHogg/antwerp)
