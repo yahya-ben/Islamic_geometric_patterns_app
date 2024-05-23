@@ -43,7 +43,7 @@ To install and run the Islamic Geometric Patterns app, follow these steps:
 
 ## **Credits, Acknowledgments, and Additional Resources 📚**
 
-We would like to express our gratitude to our mentor, Professor Youssef EL BENANI, for their valuable guidance and support throughout this project.
+We would like to express our gratitude to our mentor at the Faculty of Sciences Rabat Morocco, Professor Youssef EL BENANI, for their valuable guidance and support throughout this project.
 
 In the development of the Islamic Geometric Patterns mobile app, we extend our heartfelt appreciation to all the contributors and resources that have inspired and supported us along this journey.
 
