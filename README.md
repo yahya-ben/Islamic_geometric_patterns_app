@@ -1,4 +1,4 @@
-# Final year projet
+# Final year project
 # **Islamic Geometric Patterns Mobile App 📱**
 
 <div style="display: flex;">
